@@ -1,0 +1,55 @@
+html,
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #C4C4C4;
+}
+
+.main__input {
+    width: 800px;
+    height: 50px;
+    font-size: 28px;
+    box-sizing: border-box;
+}
+
+.autocomplete-list {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 150px;
+    gap: 1px;
+    z-index: 1000;
+}
+
+.autocomplete-item {
+    width: 800px;
+    height: 30px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: #E3E3E3;
+    cursor: pointer;
+}
+
+.autocomplete-item:hover {
+    background-color: #65CDF9;
+}
+
+.repo-list__item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: #E27BEB;
+    width: 800px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.item__delete-button {
+    height: 40px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.item__delete-button:hover {
+    background-color: red;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GH-repositories</title>
+</head>
+<body>
+  <main class="main">
+    <input class="main__input" placeholder="Введите название репозитория">
+    <div class="autocomplete-list"></div>
+    <ul class="repo-list"></ul>
+  </main>
+
+  <template id="repo-list-item-template">
+    <li class="repo-list__item">
+      <div class="item-container">
+        <p class="item__name-field">Name: </p>
+        <p class="item__owner-field">Owner: </p>
+        <p class="item__stars-field">Stars: </p>
+      </div>
+      <button class="item__delete-button">Удалить</button>
+    </li>
+  </template>
+
+  <template id="autocomplete-item-template">
+    <div class="autocomplete-item"></div>
+  </template>
+
+  <script type="module" src="src/scripts/main.js"></script>
+</body>
+</html>
